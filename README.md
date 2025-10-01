@@ -14,9 +14,7 @@
 * [Key measures & sample formulas](#key-measures--sample-formulas)
 * [Theme & formatting](#theme--formatting)
 * [Limitations & caveats](#limitations--caveats)
-* [Next steps / improvements](#next-steps--improvements)
-* [Contributing](#contributing)
-* [License](#license)
+
 
 ---
 
