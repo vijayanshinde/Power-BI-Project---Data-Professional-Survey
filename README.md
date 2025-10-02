@@ -15,7 +15,6 @@
 * [Theme & formatting](#theme--formatting)
 * [Limitations & caveats](#limitations--caveats)
 
-
 ---
 
 ## Overview
@@ -32,28 +31,36 @@ The raw survey includes responses to questions such as job title, yearly salary 
 
 ## Files in this repo
 
+The repository now contains the dataset, the Power BI file, and a PDF export of the dashboard. The exact file names (as uploaded) are listed below — **do not rename these files** if you want the report to load without relinking.
+
 ```
 / (repo root)
 ├─ data/
-│  └─ survey_responses.csv        # raw CSV (original survey export)
+│  └─ Power BI - Final Project.xlsx                # dataset for importing into Power BI (Excel workbook)
 ├─ powerbi/
-│  └─ DataProfessionalSurvey.pbix # Power BI Desktop file (report + queries)
-├─ README.md                      # this file
+│  └─ Power BI Project - Data Professional Survey.pbix   # Power BI Desktop file (report + queries)
+├─ exports/
+│  └─ Dashboard - Power BI Project - Data Professional Survey.pdf  # PDF export of the final dashboard
+├─ README.md                                      # this file
 └─ .gitignore
 ```
 
-> If you don't have the `.pbix` file, you can reproduce the report by opening `survey_responses.csv` in Power BI Desktop and following the steps in **Data cleaning** below.
+> Notes:
+>
+> * The Excel workbook `Power BI - Final Project.xlsx` is the dataset exported for convenience; you can import it into Power BI via **Get Data → Excel**.
+> * The `.pbix` file contains the full Power Query steps and visuals. Opening it in Power BI Desktop restores the report exactly as authored.
+> * The PDF (`Dashboard - Power BI Project - Data Professional Survey.pdf`) is a printable snapshot of the published report pages.
 
 ---
 
 ## Getting started
 
 1. Install **Power BI Desktop** (Windows).
-2. Clone or download this repository and open `powerbi/DataProfessionalSurvey.pbix` in Power BI Desktop — or:
+2. Clone or download this repository and open `powerbi/Power BI Project - Data Professional Survey.pbix` in Power BI Desktop — or:
 
-   * Open Power BI Desktop → **Get Data → Text/CSV** → select `data/survey_responses.csv`.
-   * Click **Transform Data** to open Power Query and apply the transformations described next.
-3. Close & Apply to load the cleaned table, then open the report canvas to view the visuals.
+   * Open Power BI Desktop → **Get Data → Excel** → select `data/Power BI - Final Project.xlsx`.
+   * Click **Transform Data** to open Power Query and inspect or re-run the transformations described next.
+3. Close & Apply to load the cleaned table, then open the report canvas to view the visuals. If you prefer, review the PDF export in `exports/` to see the finished dashboard without running Power BI locally.
 
 ---
 
@@ -187,6 +194,14 @@ Format `AverageSalary` as currency (no decimals or 0 decimals) in the visual for
 
 ---
 
+## Additional notes
 
+If you'd like, I can also:
 
+* Add a short repo description suitable for GitHub (one- or two-line blurb) to use as the repository summary.
+* Create a `CONTRIBUTING.md`, `.gitignore` (template for Power BI), and `LICENSE` (MIT) and add them to the repo canvas.
+* Produce a compact `README-short.md` that can be shown on the repo front page for quicker browsing.
 
+---
+
+*Updated to include the exact file names you uploaded.*
